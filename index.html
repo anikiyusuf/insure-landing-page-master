@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  
+  <title>Insure landing page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="scss/style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="header">
+<img src="images/logo.svg" alt="Insure logo" class="header_logo">
+
+<div class="header_controls">
+  <img src="icon-hamburger.svg" alt="open menu" id="hambuger">
+  <img src="icon-close.svg" alt="close menu" id="close">
+</div>
+<nav class="header_nav">
+  <ul class="header_navList">
+    <li>
+      <a href="#">How we work</a>
+    </li>
+    <li>
+      <a href="#">Blog</a>
+    </li>
+    <li>
+      <a href="#">Account</a>
+    </li>
+    <li>
+      <a href="#">View plans</a>
+    </li>
+  </ul>
+</nav>
+  </header>
+
+  <main>
+<section class="heroSection">
+  <img srcset="images/image-intro-mobile.jpg 375w,
+  images/image-intro-desktop.jpg 540w"
+     sizes="(max-width: 600px) 375px,
+            540px"
+     src="images/image-intro-desktop.jpg"
+     alt="A happy family">
+     <div>
+       <h1>
+        Humanizing your insurance.
+       </h1>
+       <p>
+        Get your life insurance coverage easier and faster. We blend our expertise 
+        and technology to help you find the plan that’s right for you. Ensure you 
+        and your loved ones are protected.
+       </p>
+       <button>
+        View plans
+       </button>
+     </div>
+</section>
+<section class="different">
+  <h2>
+    We’re different
+  </h2>
+
+  <ul class="different_list">
+    <li class="different_listItem" >
+      <img src="images/icon-snappy-process.svg" alt="snappy process">
+      <p class="different_listItem-header">
+        Snappy Process
+      </p>
+      <p class="different_listItem-description">
+        Our application process can be completed in minutes, not hours. Don’t get 
+        stuck filling in tedious forms.
+      </p>
+    </li>
+    <li class="different_listItem" >
+      <img src="images/icon-affordable-prices.svg" alt="Affordable prices">
+      <p class="different_listItem-header">
+        Affordable Prices
+      </p>
+      <p class="different_listItem-description">
+        We don’t want you worrying about high monthly costs. Our prices may be low, 
+  but we still offer the best coverage possible.
+      </p>
+    </li>
+    <li class="different_listItem" >
+      <img src="images/icon-people-first.svg" alt="people first">
+      <p class="different_listItem-header">
+        People First
+      </p>
+      <p class="different_listItem-description">
+        Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+  sure you’re covered when you need it.
+      </p>
+    </li>
+  </ul>
+</section>
+<section class="findOut">
+  <p>Find out more <br>about how we work.</p>
+ <!--<svg xmlns="http://www.w3.org/2000/svg" width="434" height="250" style="margin-left:20px">
+   <g fill="none" fill-rule="evenodd" stroke="#9E96C6" ><path d="M374.872-183.487c-83.088-26.03-168.523-69.446-255.99 9.854C31.415-94.333-23.575-24.865 11.936 65.016c35.51 89.881 180.463 33.898 222.58 114.23 42.116 80.332-50.424 153.24-10.528 224.736 39.896 71.496 70.573 117.318 198.785 71.859 128.212-45.46 116.391-161.127 213.89-228.861 97.5-67.734 202.988-169.134 58.222-350.07-144.766-180.935-236.925-54.367-320.013-80.397z"/><path d="M384.985-142.161c-67.557-21.138-137.022-56.395-208.139 8.002C105.73-69.762 61.02-13.351 89.892 59.638c28.873 72.99 146.729 27.527 180.973 92.762 34.243 65.235-40.998 124.441-8.56 182.5 32.439 58.059 57.381 95.27 161.627 58.354 104.246-36.916 94.634-130.846 173.908-185.85C677.114 152.4 762.883 70.057 645.178-76.874c-117.705-146.93-192.637-44.15-260.193-65.287z"/><path d="M404.804-113.49c-54.849-17.232-111.247-45.974-168.987 6.523-57.74 52.496-94.04 98.482-70.598 157.983 23.442 59.5 119.13 22.44 146.932 75.62 27.802 53.179-33.286 101.444-6.95 148.773 26.337 47.33 46.587 77.663 131.224 47.57 84.637-30.094 76.834-106.665 141.196-151.504 64.362-44.84 133.998-111.966 38.434-231.743-95.565-119.778-156.402-35.99-211.25-53.223z"/><path d="M424.91-80.123c-44.205-13.836-89.659-36.915-136.194 5.238-46.534 42.153-75.79 79.079-56.898 126.856 18.893 47.777 96.011 18.018 118.418 60.72 22.407 42.7-26.826 81.456-5.6 119.46 21.225 38.003 37.546 62.36 105.758 38.196 68.213-24.164 61.923-85.648 113.796-121.652 51.872-36.005 107.994-89.905 30.975-186.082-77.02-96.177-126.05-28.9-170.255-42.736z"/><path d="M430.256-58.56c-36.06-11.317-73.137-30.194-111.097 4.285-37.96 34.478-61.824 64.681-46.413 103.76 15.411 39.079 78.319 14.738 96.597 49.665 18.278 34.928-21.883 66.627-4.57 97.712 17.315 31.085 30.629 51.008 86.271 31.243 55.642-19.765 50.512-70.056 92.826-99.505 42.313-29.45 88.093-73.537 25.267-152.204-62.827-78.668-102.822-23.638-138.881-34.956z"/><path d="M440.955-42.498c-29.325-9.164-59.479-24.448-90.35 3.469-30.87 27.916-50.278 52.37-37.745 84.012 12.533 31.641 63.693 11.933 78.557 40.213 14.865 28.28-17.796 53.946-3.715 79.115 14.08 25.169 24.908 41.3 70.16 25.296 45.25-16.003 41.078-56.722 75.49-80.566C567.763 85.196 604.994 49.5 553.9-14.196 502.807-77.89 470.28-33.335 440.955-42.498z"/></g></svg>-->
+  <button>How we work</button>
+</section>
+  </main>
+
+  <footer class="footer">\ 
+<div class="footer_top">
+  <img src="images/logo.svg" alt="insure logo" class="footer_logo">
+  <ul class="footer_socials">
+    <li>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#837D88" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path fill="#837D88" d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/></svg>
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#837D88" d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#837D88" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<hr>
+  <div class="footer_bottom">
+<div>
+  <h3 >Our company</h3>
+  <ul>
+    <li>
+      <a href="#">How we work</a>
+    </li>
+    <li>
+      <a href="#">Why Insure?</a>
+    </li>
+    <li>
+      <a href="#">View plans</a>
+    </li>
+    <li>
+      <a href="#">Reviews</a>
+    </li>
+  </ul>
+</div>
+<div>
+  <h3>Help me</h3>
+  <ul>
+    <li>
+      <a href="#">FAQ</a>
+    </li>
+    <li>
+      <a href="#">Terms of use</a>
+    </li>
+    <li>
+      <a href="#">Privacy policy</a>
+    </li>
+    <li>
+      <a href="#">Cookies</a>
+    </li>
+  </ul>
+</div>
+<div>
+  <h3>Contact</h3>
+  <ul>
+    <li>
+      <a href="#">Sales</a>
+    </li>
+    <li>
+      <a href="#">Support</a>
+    </li>
+    <li>
+      <a href="#">Live chat</a>
+    </li>
+  </ul>
+</div>
+<div>
+  <h3>Others</h3>
+  <ul>
+    <li>
+      <a href="#">Careers</a>
+    </li>
+    <li>
+      <a href="#">Press</a>
+    </li>
+    <li>
+      <a href="#">Licenses</a>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#"> Aniki Yusuf Akindele </a>.
+  </div>
+  </footer><html lang="en">
+<head>
+ 
+</body>
+</html>
